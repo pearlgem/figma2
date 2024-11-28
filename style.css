@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+ 
+}
+@font-face {
+    font-family: pop;
+    src: url(./Poppins-Regular.ttf);
+}
+
+html {
+    font-size: 62.5%;
+    font-family: pop;
+}
+
+.apna-conainter {
+    height: 100vh;
+    width: 100vw;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient( to right, rgb(51, 51, 51), rgb(126, 126, 126));
+color: white;
+}
+
+.content {
+    height: 100vh;
+    width: 95vw;
+  
+}
+
+.img>img {
+    margin-right: 30rem;
+    padding-left: 7rem;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    height: 60px;
+    /* background-color: chartreuse; */
+    gap: 10rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links {
+    font-size: 1.7rem;
+    
+}
+.button > button {
+    font-size: 1.5rem;
+    padding: 1rem 7rem;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid rgba(224, 224, 224, 0.767);
+    background-color: transparent;
+    color: white;
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+    margin-left: 18rem;
+}
+
+.sections {
+    height: 100%;
+    width: 100%;
+ 
+    display: flex;
+}
+
+.left-section {
+    height: 100%;
+    width: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.left-section > .container > .button {
+
+    padding: 1rem 2rem;
+  
+    width: 22rem;
+    font-size: 2rem;
+    color: rgb(32, 32, 32);
+    display: flex;
+    border-radius: 16px;
+    border: .1rem black solid;
+    background: linear-gradient(to right, rgb(251, 255, 1), rgb(194, 132, 0));
+
+}
+
+.left-section > .container {
+    height: 80%;
+    width: 80%;
+    gap: 8rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.heading {
+    font-size: 4rem;
+    white-space: pre-line;
+}
+
+.para {
+    font-size: 2rem;
+    color: rgb(185, 185, 185);
+}
+
+
+
+
+
+.right-section {
+    height: 100%;
+    width: 50%;
+    /* background-color: rgb(255, 0, 0); */
+    display: flex;
+    align-items: end;
+    justify-content: right;
+    position: relative;
+   
+}
+
+#speaker1 {
+    height: 63%;
+    position: absolute;
+    left: 0;
+}
+
+#speaker2 {
+    height: 80%;
+    width: 60%;
+}
+
+@media only screen and (max-width: 600px) {
+   html {
+    font-size: 40%;
+   }
+
+   .navbar {
+    width: 100%;
+    height: 25rem;
+    
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 2rem;
+   
+   }
+
+   .img>img {
+    height: 5rem;
+   
+    
+    
+   }
+
+   .button>button {
+    margin: 0;
+    display: none;
+   }
+ 
+
+   .links {
+    
+    font-size: 3rem;
+    color: rgb(255, 236, 236);
+    gap: 0;
+    border: none;
+
+    justify-content: start;
+   }
+
+   
+
+   .links>ul {
+    border: none;
+    gap: 1.5rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-size: 2rem;
+   }
+   #speaker2 {
+    display: none;
+   }
+
+   #speaker1 {
+    height: 82%;
+    width: 104%;
+    position: absolute;
+    left: 0;
+}
+   }
+
+  
+
+
